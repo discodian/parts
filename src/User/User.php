@@ -14,7 +14,6 @@
 
 namespace Discodian\Parts\User;
 
-use Discodian\Core\Database\Persists;
 use Discodian\Parts\Part;
 
 /**
@@ -27,8 +26,6 @@ use Discodian\Parts\Part;
  */
 class User extends Part
 {
-    use Persists;
-
     protected $endpoints = [
         'get' => 'users/:id'
     ];

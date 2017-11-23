@@ -14,7 +14,6 @@
 
 namespace Discodian\Parts\Guild;
 
-use Discodian\Core\Database\Persists;
 use Discodian\Parts\Part;
 
 /**
@@ -38,8 +37,6 @@ use Discodian\Parts\Part;
  */
 class Guild extends Part
 {
-    use Persists;
-
     protected $endpoints = [
         'all' => 'users/@me/guilds',
         'get' => 'guilds/:id',
