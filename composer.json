@@ -1,0 +1,24 @@
+{
+    "name": "discodian/parts",
+    "description": "The resources used in Discodian",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "https://luceos.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Discodian\\Parts\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
