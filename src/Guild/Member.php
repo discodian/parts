@@ -14,7 +14,7 @@
 
 namespace Discodian\Parts\Guild;
 
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 use Discodian\Parts\Part;
 
 /**

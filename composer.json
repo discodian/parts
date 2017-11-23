@@ -1,6 +1,6 @@
 {
     "name": "discodian/parts",
-    "description": "The resources used in Discodian",
+    "description": "The Discord resources used in discodian",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "illuminate/support": "5.5.*"
+        "discodian/core": "*"
     },
     "autoload": {
         "psr-4": {

@@ -14,8 +14,10 @@
 
 namespace Discodian\Parts;
 
+use Discodian\Core\Requests\InteractsWithApi;
 use Illuminate\Support\Fluent;
 
 abstract class Part extends Fluent
 {
+    use InteractsWithApi;
 }
