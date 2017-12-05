@@ -22,8 +22,12 @@ class Registry implements Contract
     public function index(): array
     {
         return [
+            'embed' => Guild\Embed::class,
+            'emoji' => Guild\Emoji::class,
             'guild' => Guild\Guild::class,
-            'user' => User\User::class
+            'member' => Guild\Member::class,
+            'role' => Guild\Role::class,
+            'user' => User\User::class,
         ];
     }
 
