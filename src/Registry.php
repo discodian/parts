@@ -22,12 +22,14 @@ class Registry implements Contract
     public function index(): array
     {
         return [
+            'channel' => Guild\Channel::class,
             'embed' => Guild\Embed::class,
             'emoji' => Guild\Emoji::class,
             'guild' => Guild\Guild::class,
             'member' => Guild\Member::class,
             'role' => Guild\Role::class,
             'user' => User\User::class,
+            'owner' => User\User::class,
         ];
     }
 
