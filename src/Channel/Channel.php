@@ -12,7 +12,7 @@
  * @see https://github.com/discodian
  */
 
-namespace Discodian\Parts\Guild;
+namespace Discodian\Parts\Channel;
 
 use Discodian\Parts\Part;
 
@@ -30,4 +30,12 @@ use Discodian\Parts\Part;
  */
 class Channel extends Part
 {
+    const TYPE_TEXT = 0;
+    const TYPE_DM = 1;
+    const TYPE_VOICE = 2;
+    const TYPE_GROUP = 3;
+
+    protected $endpoints = [
+        'get' => 'channels/:id'
+    ];
 }

@@ -14,7 +14,7 @@
 
 namespace Discodian\Parts\Socket;
 
-use Discodian\Parts\Guild\Channel;
+use Discodian\Parts\Channel\Channel;
 use Discodian\Parts\Guild\Guild;
 use Discodian\Parts\Part;
 

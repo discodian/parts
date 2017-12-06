@@ -15,7 +15,7 @@
 namespace Discodian\Parts\Socket;
 
 use Carbon\Carbon;
-use Discodian\Parts\Guild\Channel;
+use Discodian\Parts\Channel\Channel;
 use Discodian\Parts\User\User;
 use Discodian\Parts\Part;
 
