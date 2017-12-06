@@ -14,15 +14,24 @@
 
 namespace Discodian\Parts\Guild;
 
+use Discodian\Parts\User\User;
+use Discodian\Parts\Guild\Role;
 use Illuminate\Support\Carbon;
 use Discodian\Parts\Part;
+use Illuminate\Support\Collection;
 
 /**
  * @property bool $deaf
  * @property Carbon $joined_at
  * @property bool $mute
  * @property string $nick
+ * @property User $user
+ * @property Collection|Role[] $roles
  */
 class Member extends Part
 {
+    public function getKey()
+    {
+        return $this->user->id;
+    }
 }

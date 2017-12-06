@@ -20,4 +20,9 @@ use Illuminate\Support\Fluent;
 abstract class Part extends Fluent
 {
     use InteractsWithApi;
+
+    public function getKey()
+    {
+        return $this->id;
+    }
 }
