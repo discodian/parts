@@ -28,4 +28,8 @@ use Discodian\Parts\Part;
  */
 class Role extends Part
 {
+    public function __toString()
+    {
+        return "<@&{$this->id}>";
+    }
 }
