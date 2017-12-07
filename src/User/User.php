@@ -17,6 +17,7 @@ namespace Discodian\Parts\User;
 use Discodian\Parts\Part;
 
 /**
+ * @property string $id
  * @property string $username
  * @property bool $verified
  * @property null $email
@@ -33,5 +34,10 @@ class User extends Part
     public function isAdmin(): bool
     {
         return in_array($this->id, config('discord.admins', []));
+    }
+
+    public function __toString()
+    {
+        return "<@{$this->id}>";
     }
 }
