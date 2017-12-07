@@ -36,6 +36,6 @@ class Channel extends Part
     const TYPE_GROUP = 3;
 
     protected $endpoints = [
-        'get' => 'channels/:id'
+        'get' => 'channels/:id',
     ];
 }
