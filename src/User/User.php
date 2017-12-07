@@ -29,4 +29,9 @@ class User extends Part
     protected $endpoints = [
         'get' => 'users/:id'
     ];
+
+    public function isAdmin(): bool
+    {
+        return in_array($this->id, config('discord.admins', []));
+    }
 }
