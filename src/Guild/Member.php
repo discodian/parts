@@ -15,7 +15,6 @@
 namespace Discodian\Parts\Guild;
 
 use Discodian\Parts\User\User;
-use Discodian\Parts\Guild\Role;
 use Illuminate\Support\Carbon;
 use Discodian\Parts\Part;
 use Illuminate\Support\Collection;
