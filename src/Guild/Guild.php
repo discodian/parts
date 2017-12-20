@@ -15,6 +15,7 @@
 namespace Discodian\Parts\Guild;
 
 use Discodian\Parts\Part;
+use Illuminate\Support\Collection;
 
 /**
  * @property string $id
@@ -34,6 +35,7 @@ use Discodian\Parts\Part;
  * @property bool $large
  * @property int $verification_level
  * @property int $member_count
+ * @property Collection|Member[] $members
  */
 class Guild extends Part
 {
