@@ -16,6 +16,13 @@ namespace Discodian\Parts\Guild;
 
 use Discodian\Parts\Part;
 
+/**
+ * @property string $title
+ * @property string $url
+ * @property array $fields
+ * @property string $color
+ * @property string $icon_url
+ */
 class Embed extends Part
 {
 }
